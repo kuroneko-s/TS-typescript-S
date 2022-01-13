@@ -1,0 +1,16 @@
+{
+  "name": "chap_06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
