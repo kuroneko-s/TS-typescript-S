@@ -9,6 +9,8 @@ import { selectRange } from './selectRange'
 import { newArray, reverseNewArray } from './subtractFrom10'
 import { sum } from './sum'
 import { toCamelCase } from './toCamelCase'
+import {name} from '../model/lens/props'
+import {modifiedName} from '../model/lens/assoc'
 
 const numbers: number[] = R.range(1, 9 + 1)
 // R.tap(n => console.log(n))(numbers)
@@ -112,6 +114,9 @@ console.log(
     // toCamelCase('_')("Hello_Albert_EINSTEING")
 )
 
-console.log(coordinates)
-console.log(location)
-console.log(person)
+// console.log(coordinates)
+// console.log(location)
+// console.log(person)
+// console.log(name)
+
+console.log(modifiedName)
