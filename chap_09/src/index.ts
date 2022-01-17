@@ -11,6 +11,8 @@ import { sum } from './sum'
 import { toCamelCase } from './toCamelCase'
 import {name} from '../model/lens/props'
 import {modifiedName} from '../model/lens/assoc'
+import * as _ from '../model/lens/lens-test'
+import '../model/lens/lensPath-test'
 
 const numbers: number[] = R.range(1, 9 + 1)
 // R.tap(n => console.log(n))(numbers)
@@ -118,5 +120,6 @@ console.log(
 // console.log(location)
 // console.log(person)
 // console.log(name)
+// console.log(modifiedName)
 
-console.log(modifiedName)
+// console.log(_.name, _.getName(_.newPerson), _.getName(_.anotherPerson), _.getName(_.capitalPerson))
