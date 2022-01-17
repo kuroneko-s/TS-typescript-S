@@ -15,7 +15,10 @@ import * as _ from '../model/lens/lens-test'
 // import '../model/lens/lensPath-test'
 // import './toPairs-test'
 // import './fromPairs-test'
-import './keys_values-test'
+// import './keys_values-test'
+// import './zipObj-test'
+// import './flatten_unnest-test'
+import './sort-test'
 
 const numbers: number[] = R.range(1, 9 + 1)
 // R.tap(n => console.log(n))(numbers)
