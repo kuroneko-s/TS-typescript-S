@@ -1,9 +1,7 @@
-import { IChain } from "../interface/IChain";
-import { IApply } from "../interface/IApply";
-import { IFunctor } from "../interface/IFunctor";
 import { ISetoid } from "../interface/ISetoid";
+import { IMonad } from '../interface/IMonad'
 
-export class Identity<T> implements ISetoid<T>, IFunctor<T>, IChain<T> {
+export class Identity<T> implements ISetoid<T>, IMonad<T> {
     constructor(private _value:T) {}
     value(): T { // IValueable
         return this._value
@@ -24,7 +22,7 @@ export class Identity<T> implements ISetoid<T>, IFunctor<T>, IChain<T> {
     static of<T>(value: T): Identity<T> { // IApplicative
         return new Identity<T>(value)
     }
-    chain<U>(fn: (T: any) => U) { // IChain
+    chain<U>(fn: (T) => U) { // IChain
         // map과 달리 엔도펑터로 구현해야 할 의무가 없어서 map과는 다르다.
         return fn(this.value())
     }

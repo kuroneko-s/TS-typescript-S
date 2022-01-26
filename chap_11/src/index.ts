@@ -1,2 +1,6 @@
 // import './test/Monad-test'
-import './test/ISetoid-test'
+// import './test/ISetoid-test'
+// import './test/IMap-IChain-test'
+// import './test/IMonad-left-law-test'
+// import './test/IMonad-right-law-test'
+import './test/IMonad-method-chain-test'
