@@ -3,4 +3,7 @@
 // import './test/IMap-IChain-test'
 // import './test/IMonad-left-law-test'
 // import './test/IMonad-right-law-test'
-import './test/IMonad-method-chain-test'
+// import './test/IMonad-method-chain-test'
+// import './test/Just-test'
+// import './test/Nothing-test'
+import './test/fetchJokes-test'
