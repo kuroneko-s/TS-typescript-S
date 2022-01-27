@@ -6,4 +6,5 @@
 // import './test/IMonad-method-chain-test'
 // import './test/Just-test'
 // import './test/Nothing-test'
-import './test/fetchJokes-test'
+// import './test/fetchJokes-test'
+import './test/getRandomJoke-test'
