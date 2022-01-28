@@ -6,7 +6,7 @@ export type FetchResult = {type: string, value: JokeType[]}
 export type JokeType = {id: number, joke: string, categories: string[]}
 
 export const getRandomJoke = () => new Promise<JokeType>( (resolve, reject) => {
-    fetchJokes()
+    fetchJokes<FetchResult>()
         .then( (result: FetchResult) => {
             let array: JokeType[] = result.value
             resolve(array[random(array.length)])
