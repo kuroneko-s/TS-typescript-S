@@ -1,3 +1,3 @@
 ### Do! it! TypeScript
 
-## 학습중
+학습중
